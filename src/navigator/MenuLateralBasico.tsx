@@ -7,8 +7,16 @@ const Drawer = createDrawerNavigator();
 export const BasicSideMenu = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="StackNavigator" component={StackNavigator} />
-      <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
+      <Drawer.Screen
+        name="StackNavigator"
+        options={{title: 'Home'}}
+        component={StackNavigator}
+      />
+      <Drawer.Screen
+        name="SettingsScreen"
+        options={{title: 'Settings'}}
+        component={SettingsScreen}
+      />
     </Drawer.Navigator>
   );
 };
